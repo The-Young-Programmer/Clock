@@ -1,0 +1,231 @@
+/* Created by NemoNet aka The Young Programmer 🏅*/
+
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    font-size:62.5%;
+}
+.main{
+    height:100vh;
+    width:100vw;
+    background-color:lime;
+    position:relative;
+    display:grid;
+    place-items:center;
+    overflow:hidden;
+    background: linear-gradient(45deg, #ea84ff , #ce84ff , #848dff , #84d5ff , #84ffc0 , #b3ff84 ,  #ffde84, #ffad84, #ff8484, #ff84cd);
+    background-size: 500% 100%;
+animation:a 10s linear alternate infinite;
+}
+@keyframes a {
+0% {
+    background-position: 0%
+}
+100% {
+    background-position: 100%
+}
+}
+.box{
+    height:350px;
+    width:350px;
+    background-color:transparent;
+    position:relative;
+}
+.clock{
+    height:100%;
+    width:100%;
+    border-radius:50%;
+    background:linear-gradient(to right bottom, rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.3));
+    backdrop-filter: blur( 20.0px );
+    box-shadow:0 .5vmin 1vmin 1vmin #2223;
+}
+.circle{
+    position:absolute;
+    height:20px;
+    width:20px;
+    border-radius:50%;
+    background-color:black;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+.st{
+    position:absolute;
+    height:30%;
+    width:3%;
+    background-color:black;
+    top:5%;
+    left:50%; 
+    transform:translateX(-50%);
+    transform-origin:bottom;
+    clip-path:polygon(50% 0,85% 10%,60% 10%,80% 100%,20% 100%,40% 10%,15% 10%);
+    filter:drop-shadow(3px 3px 0 red);
+}
+.hour{
+    top:20%;
+    left:49%;
+    transform:translateX(-50%);
+}
+.min{
+    height:35%;
+    width:2%;
+    top:15%;
+    left:49.5%;
+    transform:translateX(-50%);
+}
+.sec{
+    height:40%;
+    width:1%;
+    top:10%;
+}
+.n{
+     position: absolute;
+     width: 95%;
+     height: 95%;
+     top:2.5%;
+     left:2.5%;
+     text-align: center;
+     font-size: 1.8rem;  
+     font-family:graduate;  
+}
+.n1{
+    transform:rotate(30deg);
+}
+.n2{
+    transform:rotate(60deg);
+}
+.n3{
+    transform:rotate(90deg);
+}
+.n4{
+    transform:rotate(120deg);
+}
+.n5{
+    transform:rotate(150deg);
+}
+.n6{
+    transform:rotate(180deg);
+}
+.n7{
+    transform:rotate(210deg);
+}
+.n8{
+    transform:rotate(240deg);
+}
+.n9{
+    transform:rotate(270deg);
+}
+.n10{
+    transform:rotate(300deg);
+}
+.n11{
+    transform:rotate(330deg);
+}
+
+/* created by NemoNet */
+
+.t{
+    text-shadow:0 .1rem .1rem #2229; 
+}
+.t1{
+    transform:rotate(-30deg);
+}
+.t2{
+    transform:rotate(-60deg);
+}
+.t3{
+    transform:rotate(-90deg);
+}
+.t4{
+    transform:rotate(-120deg);
+}
+.t5{
+    transform:rotate(-150deg);
+}
+.t6{
+    transform:rotate(-180deg);
+}
+.t7{
+    transform:rotate(-210deg);
+}
+.t8{
+    transform:rotate(-240deg);
+}
+.t9{
+    transform:rotate(-270deg);
+}
+.t10{
+    transform:rotate(-300deg);
+}
+.t11{
+    transform:rotate(-330deg);
+}
+
+/* pls follow me on github >> https://github.com/The-Young-Programmer*/
+
+
+.box1{
+    position:absolute;
+    height:30%;
+    width:90%;
+    background-color:transparent;
+    bottom:0%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr .5fr 1fr .5fr 1fr;
+    grid-template-rows: 1fr;
+    gap:1% 1%;
+    grid-template-areas:
+    "hr dot1 dm dot2 dsec";
+    height:auto;
+    width:90%;
+    position:absolute;
+    left:5%;
+    top:40%;    
+}
+.hr, .dot1, .dm, .dot2, .dsec{
+    text-align: center;
+    font-family: 'Segment7Standard';
+    font-size:3.8rem;
+    padding:10px;
+    width:auto;
+    border-radius:1rem;
+    background: #eee5; 
+    text-shadow:0 .1rem .1rem #2229; 
+    box-shadow:0 .5vmin 1vmin 1vmin #2223;
+}
+.hr { 
+    grid-area: hr; 
+}
+.dot1 { 
+    grid-area: dot1; 
+}
+.dm { 
+    grid-area: dm; 
+}
+.dot2 { 
+    grid-area: dot2; 
+}
+.dsec { 
+    grid-area: dsec; 
+}
+.tb{
+    position:absolute;
+    background-color:red;
+    padding:10px;
+    top:5%;
+    width:90%;
+    text-align:center;
+    border-radius:1rem;
+    background: #eee5; 
+    text-shadow:0 .1rem .1rem #2229; 
+    box-shadow:0 .5vmin 1vmin 1vmin #2223;
+    font-size:4rem;
+    font-family:'Tangerine';
+}
+ 
